@@ -37,6 +37,9 @@ cp -r $HOME/Programming/1AqueuePKS/coupledOscillatorsDPLLqueueBasis/* $scratch
 # [Remember: Don’t read or write to /home from here.] 
 echo "Running on $(hostname)" 
 echo "We are in $(pwd)" 
+# load python 2.7 module
+sleep 0.5
+module load intelpython2
 # start single case
 # python oracle.py ring 3 0.25 0.1 1.45 1.1225198136 0 400
 # start many parameter sets, read-out from file, see Array Jobs in documentation
